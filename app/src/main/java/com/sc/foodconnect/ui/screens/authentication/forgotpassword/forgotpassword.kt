@@ -63,7 +63,7 @@ import com.sc.foodconnect.ui.theme.secondaryColor
 
 
 @Composable
-fun ForgotPasswordScreen(modifier: Modifier){
+fun ForgotPasswordScreen(modifier: Modifier, navController: NavHostController){
     var emailInput by remember { mutableStateOf(TextFieldValue("")) }
     var codeInput by remember { mutableStateOf(TextFieldValue("")) }
     var passwordInput by remember { mutableStateOf(TextFieldValue("")) }

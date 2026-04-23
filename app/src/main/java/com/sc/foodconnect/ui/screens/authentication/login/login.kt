@@ -43,13 +43,14 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.sc.foodconnect.R
 import com.sc.foodconnect.ui.theme.primaryColor
 import com.sc.foodconnect.ui.theme.secondaryColor
 
 
 @Composable
-fun LoginScreen(){
+fun LoginScreen(navController: NavHostController){
 //     inputs
     var emailInput by remember { mutableStateOf(TextFieldValue("")) }
     var passwordInput by remember { mutableStateOf(TextFieldValue("")) }

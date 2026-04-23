@@ -4,4 +4,4 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 
 @Composable
-fun aboutus(navController: NavHostController){}
+fun contactus(navController: NavHostController){}){}
