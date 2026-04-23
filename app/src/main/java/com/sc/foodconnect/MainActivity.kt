@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.sc.foodconnect.ui.screens.navigation.AppNavigation
 import com.sc.foodconnect.ui.theme.FoodConnectTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,6 +22,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             FoodConnectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    AppNavigation(
+                        navController = rememberNavController(),
+                        modifier = Modifier.padding(innerPadding)
+                    )
 
                 }
             }
